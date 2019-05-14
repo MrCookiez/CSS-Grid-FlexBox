@@ -6,14 +6,20 @@
   <style>
     .grid{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      /* minmax() ### fr = fraction ### */
-      grid-template-rows: 200px;
+      /* fr = fraction */
       /*
-      grid-column-gap:1em;
-      grid-row-gap:1em;
+      -- standard -- */
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+      /*  -- shortcut -- */
+      grid-template-columns: repeat(4, 1fr);
+      /* grid-template-rows: 200px; minmax(200px) fixes the text overflow */
+      /*
+      -- standard --
+      grid-column-gap: 1em;
+      grid-row-gap: 2em;
+      -- shortcut --
       */
-      grid-gap:1em 2em;
+      grid-gap: 1em 2em;
     }
   </style>
 </head>

@@ -9,7 +9,7 @@
           grid-template-rows: 200px 200px;
           grid-gap: 1em;
 
-          /* -- ALIGMENT -- (same styles can be implemented to each item by "justify-self" & "align-self")
+          /* -- ALIGMENT --
           * ← X →
           */
           /* justify-items: stretch; */
@@ -26,8 +26,20 @@
           /* align-items: end; */
         }
 
-        /* -- ORDER -- *//*
-        .box1 { order: 4;}
+        /* -- ORDER & ALIGMENT -- */
+        .box1 {
+          order: 4;
+          /* justify-self: stretch; */
+          /* justify-self: center; */
+          /* justify-self: start; */
+          /* justify-self: end; */
+
+          /* align-self: start; */
+          /* align-self: center; */
+          /* align-self: start; */
+          /* align-self: end; */
+        }
+        /*
         .box2 { order: 3; }
         .box3 { order: 2; }
         .box4 { order: 1; }
