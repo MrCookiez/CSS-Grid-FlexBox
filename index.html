@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Grids</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* minmax() ### fr = fraction ### */
+      grid-template-rows: 200px;
+      /*
+      grid-column-gap:1em;
+      grid-row-gap:1em;
+      */
+      grid-gap:1em 2em;
+    }
+  </style>
+</head>
+<body>
+<!--
+  * Resources:
+  * https://caniuse.com/#feat=css-grid
+  * https://css-tricks.com/snippets/css/complete-guide-grid/
+  * https://gridbyexample.com/
+-->
+  <h1>- CSS GRID 101 -</h1>
+  <div>
+      <h3>About Grid:</h3>
+      <ul>
+        <li>2-D system (rows & columns)</li>
+        <li>Targets parent & children</li>
+        <li>Getting rid off floats and positioning</li>
+        <li>Clean and easy to read and write css code</li>
+      </ul>
+    </div>
+  <div class="grid">
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+html {
+    overflow-x: hidden;
+}
+body {
+    padding: 20px;
+    background: #fafafa;
+}
+h1 {
+    text-align: center;
+}
+.grid > div{
+    background-color: rgba(253, 162, 76, 1);
+    padding:1em;
+    box-sizing: border-box;
+    border: 5px solid #000;
+    -webkit-box-shadow: 2px 5px 2px -1px rgba(0,0,0,0.67);
+    -moz-box-shadow: 2px 5px 2px -1px rgba(0,0,0,0.67);
+    box-shadow: 2px 5px 2px -1px rgba(0,0,0,0.67);
+  }
+  .grid > div:nth-child(odd){
+    background:#ddd;
+    border: 5px solid rgba(253, 162, 76, 1);
+  }

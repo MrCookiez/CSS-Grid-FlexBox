@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Grids</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Grid styles*/
+    .header {
+        grid-area: header;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+      grid-gap:1em;
+
+    }
+  </style>
+</head>
+<body>
+<!--
+    * Resources:
+    * https://caniuse.com/#feat=css-grid
+    * https://css-tricks.com/snippets/css/complete-guide-grid/
+    * https://gridbyexample.com/
+-->
+    <h1>* Grid areas template *</h1>
+    <div class="grid">
+
+        <div class="main">
+            <h4>2. Main</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non vero consequuntur ducimus distinctio possimus incidunt. Deleniti sint voluptate corrupti minima cupiditate, sequi laudantium doloribus fuga quaerat nobis ipsum illo.
+            </p>
+        </div>
+
+        <div class="header">
+                <h4>1. Header</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non vero consequuntur ducimus distinctio possimus incidunt. Deleniti sint voluptate corrupti minima cupiditate, sequi laudantium doloribus fuga quaerat nobis ipsum illo.
+                </p>
+            </div>
+
+        <div class="sidebar">
+            <h4>3. Sidebar</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non vero consequuntur ducimus distinctio possimus incidunt. Deleniti sint voluptate corrupti minima cupiditate, sequi laudantium doloribus fuga quaerat nobis ipsum illo.
+            </p>
+        </div>
+        <div class="footer">
+            <h4>4. Footer</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non vero consequuntur ducimus distinctio possimus incidunt. Deleniti sint voluptate corrupti minima cupiditate, sequi laudantium doloribus fuga quaerat nobis ipsum illo.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
